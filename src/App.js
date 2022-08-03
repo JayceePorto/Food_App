@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
 import Cart from './components/cart/Cart';
-import CartProvider from './store/CartProvider';
+import CartProvider from './components/store/CartProvider';
 
 
 function App() {
