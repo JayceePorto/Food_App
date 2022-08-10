@@ -7,7 +7,7 @@ const MealItemForm = (props) => {
     const [amountIsValid, setAmountIsValid] = useState(true);
     const amountInputRef = useRef();
 
-    const submitHandler = event => {
+    const submitHandler = (event) => {
         event.preventDefault();
 
         const enteredAmount = amountInputRef.current.value;
@@ -31,7 +31,7 @@ const MealItemForm = (props) => {
             ref={amountInputRef}
             label='Amount' 
             input={{
-                id: 'amount',
+                id: 'amount_' + props.id,
                 type: 'number',
                 min: '1',
                 max: '5',

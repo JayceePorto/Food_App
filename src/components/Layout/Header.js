@@ -1,11 +1,13 @@
 import { Fragment } from 'react';
+
 import HeaderCartButton from './HeaderCartButton';
 import mealsImage from '../../assets/meals.jpg';
 import classes from './Header.module.css';
 
 
 const Header = (props) => {
-    return <Fragment>
+    return (
+    <Fragment>
         <header className={classes.Header}>
             <h1>ReactMeals</h1>
             <HeaderCartButton onClick={props.onShowCart}/>
@@ -14,6 +16,6 @@ const Header = (props) => {
             <img src={mealsImage} alt="A table full of food"/>
         </div>
     </Fragment>
-}
+    )};
 
 export default Header;
